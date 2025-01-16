@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+h1 {
+    position: sticky;
+    top: 5px;
+
+
+}
+
+.container {
+    display: flex;
+    background-color: aqua;
+    width: auto;
+    height: auto;
+}
+
+.divBox {
+    background-color: blue;
+}

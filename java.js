@@ -25,3 +25,8 @@ function boardSize(size) {
     }
 }
 
+document.getElementById("black").onclick = function(){
+    // add mouseover event
+    //that turns the divs black
+    // how do i access those divs?
+}

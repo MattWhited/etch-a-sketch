@@ -1,6 +1,14 @@
+let size;
+
+
+document.getElementById("select").onclick = function(){
+    size = Number(document.getElementById('gridSize').value);
+    console.log(size)
+    boardSize(size)
+}
+
 document.addEventListener("DOMContentLoaded", function(){
-    boardSize(12)
-    getSize();
+    boardSize(size)
     console.log('farts')
 })
 
@@ -17,9 +25,3 @@ function boardSize(size) {
     }
 }
 
-function getSize(){
-    let input = prompt("How big would you like the board?")
-    if(input == "") {
-        // DORS coding school 23:36 minutes
-    }
-}

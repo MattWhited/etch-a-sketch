@@ -30,6 +30,6 @@ body {
     border: solid black;
 }
 
-.black > div:hover {
-    background-color: black;
+.pixelCSS {
+   background-color: black;
 }

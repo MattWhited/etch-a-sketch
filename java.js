@@ -1,6 +1,5 @@
 let size;
 
-
 document.getElementById("select").onclick = function(){
     size = Number(document.getElementById('gridSize').value);
     console.log(size)
@@ -22,11 +21,14 @@ function boardSize(size) {
     for(let i = 0; i < numDivs; i++){
         let div = document.createElement("div");
         main.insertAdjacentElement("beforeend", div);
+        div.setAttribute('class', 'pixel');
     }
 }
 
 document.getElementById("black").onclick = function(){
-    // add mouseover event
-    //that turns the divs black
-    // how do i access those divs?
-}
+    let pixel = document.getElementsByClassName('pixel');
+    Array.from(pixel).forEach(pix => {
+        pix.addEventListener('mouseover', function() { pix.style.backgroundColor = 'black'})
+    });
+    console.log("btn works")
+};

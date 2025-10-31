@@ -1,6 +1,5 @@
 let size;
 
-
 // board size selection
 document.getElementById("select").onclick = function(){
     size = Number(document.getElementById('gridSize').value);
@@ -11,7 +10,6 @@ document.getElementById("select").onclick = function(){
 document.addEventListener("DOMContentLoaded", function(){
     boardSize(size)
 })
-
 
 // create board / grid size
 function boardSize(size) {
@@ -28,7 +26,6 @@ function boardSize(size) {
     }
 }
 
-
 // Black color button
 document.getElementById("black").onclick = function(){
     let pixel = document.getElementsByClassName('pixel');
@@ -36,7 +33,6 @@ document.getElementById("black").onclick = function(){
         pix.addEventListener('mouseover', function() { pix.style.backgroundColor = 'black'})
     });
 };
-
 
 // Random color button
 document.getElementById("random").onclick = function(){
@@ -53,7 +49,6 @@ function getRandomRgbColor() {
   const b = Math.floor(Math.random() * 256);
   return `rgb(${r}, ${g}, ${b})`;
 }
-
 
 // Clear the board btn
 document.getElementById("reset").onclick = function() {

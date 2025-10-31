@@ -29,11 +29,3 @@ body {
     display: grid;
     border: solid black;
 }
-
-.pixelBlack {
-   background-color: black;
-}
-
-.pixelRandom {
-    background-color: yellow;
-}

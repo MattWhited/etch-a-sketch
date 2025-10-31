@@ -42,6 +42,14 @@ document.getElementById("black").onclick = function(){
 document.getElementById("random").onclick = function(){
     let pixel = document.getElementsByClassName('pixel');
     Array.from(pixel).forEach(pix => {
-        pix.addEventListener('mouseover', function() { pix.style.backgroundColor = 'black'})
+        pix.addEventListener('mouseover', function() { pix.style.backgroundColor = getRandomRgbColor()})
     });
 };
+
+// random color function
+function getRandomRgbColor() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  return `rgb(${r}, ${g}, ${b})`;
+}

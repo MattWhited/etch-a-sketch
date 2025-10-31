@@ -30,6 +30,10 @@ body {
     border: solid black;
 }
 
-.pixelCSS {
+.pixelBlack {
    background-color: black;
+}
+
+.pixelRandom {
+    background-color: yellow;
 }

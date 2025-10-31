@@ -53,3 +53,10 @@ function getRandomRgbColor() {
   const b = Math.floor(Math.random() * 256);
   return `rgb(${r}, ${g}, ${b})`;
 }
+
+
+// Clear the board btn
+document.getElementById("reset").onclick = function() {
+    let pixel = document.getElementsByClassName('pixel');
+    Array.from(pixel).forEach(pix => {pix.style.backgroundColor = 'white'});
+};
